@@ -13,5 +13,26 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <!-- <input type="text" />
+    <script>
+      function debounced(fn, time){
+        let timer = null;
+
+        return function(...args){
+          clearTimeout(timer)
+          timer = setTimeout(() => {
+            console.log(this)
+            fn.apply(this, args)
+          }, time)
+        }
+      }
+
+      let input = document.getElementsByTagName("input")[0]
+      function fn(){
+        console.log("HHHH")
+      }
+      input.onkeyup = debounced(fn, 2000)
+    </script> -->
   </body>
 </html>
